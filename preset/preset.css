@@ -1,0 +1,100 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #68945f;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #374e32;
+}
+
+@font-face {
+    font-family: "langar";
+    src: url(../font/Langar-Regular.ttf);
+}
+
+@font-face {
+    font-family: "reey";
+    src: url(../font/Reey-Regular.otf);
+}
+
+body {
+    background-color: black;
+}
+
+
+/*---------------------HEADER------------------------------*/
+header {
+
+    display: block;
+    animation: fadeInHeader 1s ease-in-out;
+
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*---------------------MAIN-----------------------*/
+#main {
+    justify-self: center;
+    text-align: center;
+    margin: 5px;
+    height: fit-content;
+    top: 25%;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: auto;
+    animation: fadeInHeader 2s ease-in-out;
+    ;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'reey';
+    color: #96d989;
+}
+
+
+h1:hover {
+    transition-duration: 0.5s;
+}
+
+p {
+    opacity: 1;
+    color: #96d989;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/*------------------------HeyperLink-------------------------*/
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    text-shadow: 4px 3px #ffffff;
+}
