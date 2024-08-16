@@ -1,0 +1,107 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "langar";
+    src: url(../font/Langar-Regular.ttf);
+}
+
+@font-face {
+    font-family: "reey";
+    src: url(../font/Reey-Regular.otf);
+}
+
+body {
+    font-family: "langar";
+    background-color: black;
+}
+
+/*---------------------HEADER------------------------------*/
+header {
+
+    display: block;
+    animation: fadeInHeader 1s ease-in-out;
+
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(thumbnail/AutomobileThumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 1s;
+}
+
+.img-box:nth-child(2) {
+    background: url(thumbnail/NatureThumbnail.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(3) {
+    background: url(thumbnail/ProductThumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(4) {
+    background: url(thumbnail/AbstractThumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h3 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 1s, opacity 2s;
+}
+
+.img-box:hover {
+    width: 300px;
+    transition: 1s;
+}
+
+.img-box:hover h3 {
+    opacity: 1;
+    bottom: 50%;
+}
+
+#abc {
+    color: white;
+}
