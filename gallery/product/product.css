@@ -1,0 +1,108 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #68945f;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #374e32;
+}
+
+@font-face {
+    font-family: "langar";
+    src: url(../font/Langar-Regular.ttf);
+}
+
+@font-face {
+    font-family: "reey";
+    src: url(../font/Reey-Regular.otf);
+}
+
+body {
+    font-family: "langar";
+    background-color: black;
+}
+
+/*---------------------HEADER------------------------------*/
+header {
+    display: block;
+    animation: fadeInHeader 1s ease-in-out;
+
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Style for the gallery images */
+.gallery-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+/*lightbox shadow*/
+.lightbox-shadow {
+    position: relative;
+}
+
+/* Style for the modal content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+}
+
+#img01 {
+    transition: transform 0.5s ease;
+}
+
+#img01:hover {
+    transform: scale(1.5);
+}
