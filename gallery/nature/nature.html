@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>NATURE</title>
+    <link rel="stylesheet" href="nature.css">
+</head>
+
+<body>
+    <header style="text-align: center; display: block; position: relative;">
+        <a href="../../home.html" title="Home"><img height="150" src="../../imgs/header.png"></a>
+    </header>
+    <div>
+        <h1>Click on image to zoom and anywhere to close.</h1>
+    </div>
+    <div class="gallery">
+        <img src="img.jpg" alt="Image 1" class="gallery-image">
+        <img src="img.jpg" alt="Image 2" class="gallery-image">
+        <img src="img.jpg" alt="Image 3" class="gallery-image">
+        <img src="img.jpg" alt="Image 4" class="gallery-image">
+        <img src="img.jpg" alt="Image 5" class="gallery-image">
+        <img src="img.jpg" alt="Image 6" class="gallery-image">
+        <img src="img.jpg" alt="Image 7" class="gallery-image">
+        <img src="img.jpg" alt="Image 8" class="gallery-image">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- The Modal -->
+    <div class="lightbox-shadow">
+        <!-- Lightbox content here -->
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for the lightbox 
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('img01');
+        galleryImages.forEach(function (image) {
+            image.onclick = function () {
+                modal.style.display = 'block';
+                modalImg.src = this.src;
+            };
+        });
+
+        // Code to close the lightbox
+        const closeButton = document.querySelector('.lightbox-shadow');
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+    </script>
+</body>
+
+</html>
