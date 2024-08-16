@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>ADMIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- drag and drop -->
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+</head>
+
+<body>
+
+    <header style="text-align: center; display: block; position: relative;">
+        <a href="home.html" title="Home"><img height="125" src="imgs/header.png"></a>
+    </header>
+    <!-- drag and drop -->
+    <div class="drag-area">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <h1>Drag & Drop to Upload File</h1>
+        <span>OR</span>
+        <button>Browse File</button>
+        <input type="file" hidden>
+    </div>
+
+    <!-- upload -->
+    <div class="upload">
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <!-- Your existing HTML code for the drag and drop area, button, and input -->
+
+            <select name="custom_folder">
+                <option value="folder1">Folder 1</option>
+                <option value="folder2">Folder 2</option>
+                <option value="folder3">Folder 3</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+
+</html>

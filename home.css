@@ -1,0 +1,207 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #68945f;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #374e32;
+}
+@font-face {
+    font-family: "langar";
+    src: url(font/Langar-Regular.ttf);
+}
+
+@font-face {
+    font-family: "reey";
+    src: url(font/Reey-Regular.otf);
+}
+
+body {
+    font-family: "langar";
+    background-color: black;
+}
+
+h1 {
+    color: #96d989;
+}
+
+h1:hover {
+    transition-duration: 0.5s;
+}
+
+p {
+    font-family: "reey";
+    line-height: 30px;
+    font-size: 20px;
+}
+
+div {
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    position: absolute;
+}
+
+/*---------------------HEADER------------------------------*/
+header {
+    display: block;
+    animation: fadeInHeader 1s ease-in-out;
+
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------------BOX 1-----------------------------*/
+#box1 {
+    background-color: #96d989;
+    top: 25%;
+    left: 5%;
+    animation: fadeInBox1 2s ease-in-out;
+    transition-duration: 1s;
+}
+
+@keyframes fadeInBox1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#box1:hover {
+    box-shadow: 5px 5px 5px 5px rgba(150,
+            217,
+            137, 0.6), 10px 15px 15px 10px rgba(150,
+            217,
+            137, 0.9);
+}
+
+/*----------------------BOX 2-----------------------------*/
+#box2 {
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    top: 20%;
+    left: 60%;
+}
+
+div.a {
+    padding: 0px;
+    border-radius: 0px;
+    left: 20%;
+}
+
+div.b {
+    padding: 0px;
+    border-radius: 0px;
+    left: 50%;
+}
+
+div.c {
+    padding: 0px;
+    padding-left: 0%;
+    border-radius: 0px;
+    left: 80%;
+}
+
+h1.a {
+    animation: fadeInRight 2.5s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1.b {
+    animation: fadeInRight 3s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1.c {
+    animation: fadeInRight 3.5s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1.d {
+    animation: fadeInRight 4s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*------------------------HeyperLink-------------------------*/
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    text-shadow: 4px 3px rgba(150, 217, 137, 0.7);
+}

@@ -1,0 +1,157 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #68945f;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #374e32;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: "langar";
+    src: url(../font/Langar-Regular.ttf);
+}
+
+@font-face {
+    font-family: "reey";
+    src: url(../font/Reey-Regular.otf);
+}
+
+body {
+    font-family: "reey";
+    background-color: black;
+}
+
+h1 {
+    color: #96d989;
+}
+
+
+h1:hover {
+    transition-duration: 0.5s;
+}
+
+p {
+    font-family: "reey";
+    line-height: 30px;
+    font-size: 20px;
+}
+
+div {
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    position: absolute;
+}
+
+/*---------------------HEADER------------------------------*/
+header {
+
+    display: block;
+    animation: fadeInHeader 1s ease-in-out;
+
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------------BOX 1-----------------------------*/
+#mainBox {
+    margin: auto;
+    width: 50%;
+    left: 20%;
+    animation: fadeInBox1 5s;
+    transition-duration: 1s;
+}
+
+@keyframes fadeInBox1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+input {
+    height: auto;
+    width: 30%;
+    padding: 6px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    transition-duration: 1s;
+}
+
+input:focus {
+    background-color: rgba(243, 243, 243, 0.712);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+input:hover {
+    box-shadow: 0 12px 16px 0 rgba(206, 204, 204, 0.589), 0 17px 50px 0 rgba(206, 204, 204, 0.589);
+}
+
+button {
+    font-family: "langar";
+    color: rgb(116, 204, 116);
+    background-color: rgb(22, 100, 22);
+    border-radius: 10px;
+    font-size: 22px;
+    width: auto;
+    border: 2px solid #48c230;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: #48c230;
+    border: 2px solid #50cc37;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(206, 204, 204, 0.589), 0 17px 50px 0 rgba(206, 204, 204, 0.589);
+}
+
+/*------------------------HeyperLink-------------------------*/
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    text-shadow: 4px 3px #ffffff;
+}
